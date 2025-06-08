@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Igor Skrzyński">
+        <meta name="description" content="Aplikacja do przeglądania i zarządzania wydarzeniami kulturalnymi w Polsce.">
+        <meta name="keywords" content="kultura, wydarzenia, koncerty, festiwale, sztuka, wydarzenia sportowe">
+        <title>KulturOn</title>
+        <link rel="stylesheet" href="style.css">       
+    </head>
+    <body>
+        <div class="login_main">
+            <div class="login_logo_container">
+                <a href="./index.html"><img src="./pictures/Logo.svg" alt="Fioletowy napis KulturOn" class="login_logo_img"></a>
+            </div>
+            <div class="login_container">
+                <h1 class="login_title">Zarejestruj się</h1>
+                <div class="login_input_container">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="login_input_container">
+                    <label for="email">Powtórz Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="login_input_container">
+                    <label for="password">Hasło:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="login_input_container">
+                    <label for="password">Powtórz hasło:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="login_input_container">
+                    <label for="show_password">Pokaż hasła</label>
+                    <input type="checkbox" id="show_password" name="show_password">
+                </div>
+                <a href="./index.html"><button class="login_button">Załóż konto</button></a>
+                <p class="message"></p>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Popup</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="pop_up_container" id="pop_up_container">
+            <div class="pop_up_window">
+                <h1 class="pop_up_title">Popup Title</h1>
+                <div class="input_container">
+                    <label for="inputField" class="input_label">Input:</label>
+                    <input type="text" id="inputField1" class="input_field" placeholder="Enter text here">
+                    <label for="inputField" class="input_label">Input:</label>
+                    <input type="text" id="inputField2" class="input_field" placeholder="Enter text here">
+                    <label for="inputField" class="input_label">Input:</label>
+                    <input type="text" id="inputField3" class="input_field" placeholder="Enter text here">
+                </div>
+                <p class="pup_up_message">This is a popup message</p>
+                <div class="pop_up_buttons">
+                    <button  onclick="showPopup()" class="execute_button">Execute</button>
+                    <button  onclick="hidePopup()" class="cancel_button" id="cancelButton">Cancel</button>
+                </div>
+            </div>
+        </div>
+        <script>
+            function showPopup() {
+            document.getElementById('pop_up_container').style.display = 'flex';
+            }
+
+            function hidePopup() {
+            document.getElementById('pop_up_container').style.display = 'none';
+            }
+        </script>
+    </body>
+</html>

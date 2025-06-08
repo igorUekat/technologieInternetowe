@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Igor Skrzyński">
+        <meta name="description" content="Aplikacja do przeglądania i zarządzania wydarzeniami kulturalnymi w Polsce.">
+        <meta name="keywords" content="kultura, wydarzenia, koncerty, festiwale, sztuka, wydarzenia sportowe">
+        <title>KulturOn</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="logged_header_container">
+                <a href="./index.html"><img src="./pictures/Logo.svg" alt="Fioletowy napis KulturOn"></a>
+                <h1>Odkrywaj, Doświadczaj, Bądź Częścią</h1>
+                <div class="logged_user_container">
+                    <a href="./powiadomienia.html"><img src="./pictures/bell.svg" alt="Dzwonek" class="logged_user_icon"></a>
+                    <a href="./panel_uzytkownika.html"><img src="./pictures/user.svg" alt="Użytkownik" class="logged_user_icon"></a>
+                    <a href="./index.html"><p>Wyloguj się</p></a>
+                </div>
+        </div>
+        <div class ="navigation_container">
+        <div><a href="./lista_wydarzen.html"><button>Lista Wydarzeń</button></a></div>
+        <div class="dropdown">
+            <div><button>Regulamin</button></div>
+            <div class="dropdown_content">
+                <a href="./dla_standard.html">Dla standardowych użytkowników</a>
+                <a href="./dla_firm.html">Dla firm</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <div><button>O nas</button></div>
+            <div class="dropdown_content">
+                <a href="./cel_strony.html">Cel strony</a>
+                <a href="./faq.html">FAQ</a>
+                <a href="./kontakt.html">Kontakt</a>
+            </div>
+        </div>       
+    </div>
+    <div class="user_panel_container">
+        <img src="./pictures/company.svg" alt="Organizacja">
+        <div class="user_panel_info">
+            <h1>Nazwa organizacji</h1>
+            <p>Adres</p>
+        </div>
+        <div class="user_panel_buttons">
+            <a href="./znajdz_stworz_org.html"><button>Znajdź lub stwórz organizację</button></a>
+            <a href="./zarzadzaj_organizacja.html"><button>Zarządzaj organizacją</button></a>
+            <a href="./edytuj_org.html"><button>Zmień dane organizacji</button></a>
+            <a href="./dodaj_wydarzenie.html"><button>Dodaj wydarzenie</button></a>
+            <a href="./zarzadzaj_wydarzeniami.html"><button>Zarządzaj wydarzeniami</button></a>
+            <a href="./historia_wydarzen_org.html"><button>Wasze wydarzenia</button></a>
+        </div>
+    </div>
+    <div class="user_panel_container">
+        <img src="./pictures/user.svg" alt="Użytkownik">
+        <div class="user_panel_info">
+            <h1>Imię Nazwisko</h1>
+            <p>Adres e-mail</p>
+        </div>
+        <div class="user_panel_buttons">
+            <a href="./lista_wydarzen_user.html"><button>Lista Wydarzen</button></a>
+            <a href="./historia_wydarzen.html"><button>Historia wydarzen</button></a>
+            <a href="./edytuj_profil.html"><button>Edytuj profil</button></a>
+        </div>
+    </div>
+    </body>   
+</html>

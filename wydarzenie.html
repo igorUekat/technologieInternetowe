@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Igor Skrzyński">
+        <meta name="description" content="Aplikacja do przeglądania i zarządzania wydarzeniami kulturalnymi w Polsce.">
+        <meta name="keywords" content="kultura, wydarzenia, koncerty, festiwale, sztuka, wydarzenia sportowe">
+        <title>KulturOn</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="header_container">
+            <div><a href="./index.html"><img src="./pictures/Logo.svg" alt="Fioletowy napis KulturOn" class="logo_img"></a></div>
+            <div><h1 class="motto">Odkrywaj, Doświadczaj, Bądź Częścią</h1></div>
+            <div><a href="./login.html" class="login-button">Zaloguj się</a></div>
+        </div>
+        <div class ="navigation_container">
+            <div><a href="./lista_wydarzen.html"><button>Lista Wydarzeń</button></a></div>
+            <div class="dropdown">
+                <div><button>Regulamin</button></div>
+                <div class="dropdown_content">
+                    <a href="./dla_standard.html">Dla standardowych użytkowników</a>
+                    <a href="./dla_firm.html">Dla firm</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <div><button>O nas</button></div>
+                <div class="dropdown_content">
+                    <a href="./cel_strony.html">Cel strony</a>
+                    <a href="./faq.html">FAQ</a>
+                    <a href="./kontakt.html">Kontakt</a>
+                </div>
+            </div>
+        </div>
+        <div class="event_container">
+            <div class="image_container">
+                <img src="./pictures/koncert.jpg" alt="Koncert">
+            </div>
+            <div class="info_container">
+                <div class="info">
+                    <div class="basic_info">
+                        <h1>Podstawowe informacje:</h1>
+                        <div class="basic_info_content">
+                            <img src="./pictures/kalendarz.svg" alt="Kalendarz">
+                            <p>1.1.2000</p>
+                        </div>
+                        <div class="basic_info_content">
+                            <img src="./pictures/location.svg" alt="Lokalizacja">
+                            <p>Warszawa, woj.Mazowieckie</p>
+                        </div>
+                        <div class="basic_info_content">
+                            <img src="./pictures/cena.svg" alt="Cena">
+                            <p>50zł</p>
+                        </div>
+                    </div>
+                    <div class="title">
+                        <h1>Lorem Ipsum</h1>
+                        <h2>Koncert</h2>
+                    </div>
+                    <div class="maps">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4170.0141469389!2d21.01035450010982!3d52.230507622439006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spl!2sno!4v1747870329735!5m2!1spl!2sno" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <div class="info2">
+                    <img src="./pictures/czlowiek.svg" alt="Biorący udział">
+                    <p>123 456 789</p>
+                    <button onclick="showPopup()">Zgłoś udział/kup bilet</button>
+                    <button>Zapisz wydarzenie</button>
+                    <p>123 456 789</p>
+                    <img src="./pictures/oko.svg" alt="Obserwujący">
+                </div>
+            </div>
+            <div class="description_container">
+                <h2>Opis wydarzenia</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="gallery_container">
+                <h2>Galeria</h2>
+                <div class="gallery_image_container">
+                    <div class="gallery_image">
+                        <img src="./pictures/koncert.jpg" alt="Koncert">
+                    </div>
+                    <div class="gallery_image">
+                        <img src="./pictures/koncert.jpg" alt="Koncert">
+                    </div>
+                    <div class="gallery_image">
+                        <img src="./pictures/koncert.jpg" alt="Koncert">
+                    </div>
+                    <div class="gallery_image">
+                        <img src="./pictures/koncert.jpg" alt="Koncert">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pop_up_container" id="pop_up_container">
+            <div class="pop_up_window">
+                <h1 class="pop_up_title">Kup bilety</h1>
+                <div class="input_container">
+                    <label for="Normalne" class="input_label">Normalne: 50zł</label>
+                    <input type="number" id="Normalne" class="input_field" placeholder="Ilość biletów normalnych">
+                    <label for="Ulgowe" class="input_label">Ulgowe: 25zł</label>
+                    <input type="number" id="Ulgowe" class="input_field" placeholder="Ilość biletów ulgowych">
+                </div>
+                <p>Razem: 75zł</p>
+                <p class="pup_up_message"></p>
+                <div class="pop_up_buttons">
+                    <button  class="execute_button">Kup</button>
+                    <button  onclick="hidePopup()" class="cancel_button" id="cancelButton">Anuluj</button>
+                </div>
+            </div>
+        </div>
+        <script>
+            function showPopup() {
+            document.getElementById('pop_up_container').style.display = 'flex';
+            }
+
+            function hidePopup() {
+            document.getElementById('pop_up_container').style.display = 'none';
+            }
+        </script>
+    </body>
+</html>

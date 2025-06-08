@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Igor Skrzyński">
+        <meta name="description" content="Aplikacja do przeglądania i zarządzania wydarzeniami kulturalnymi w Polsce.">
+        <meta name="keywords" content="kultura, wydarzenia, koncerty, festiwale, sztuka, wydarzenia sportowe">
+        <title>KulturOn</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="logged_header_container">
+                <a href="./index.html"><img src="./pictures/Logo.svg" alt="Fioletowy napis KulturOn"></a>
+                <h1>Odkrywaj, Doświadczaj, Bądź Częścią</h1>
+                <div class="logged_user_container">
+                    <a href="./powiadomienia.html"><img src="./pictures/bell.svg" alt="Dzwonek" class="logged_user_icon"></a>
+                    <a href="./panel_uzytkownika.html"><img src="./pictures/user.svg" alt="Użytkownik" class="logged_user_icon"></a>
+                    <a href="./index.html"><p>Wyloguj się</p></a>
+                </div>
+        </div>
+        <div class ="navigation_container">
+            <div><a href="./lista_wydarzen.html"><button>Lista Wydarzeń</button></a></div>
+            <div class="dropdown">
+                <div><button>Regulamin</button></div>
+                <div class="dropdown_content">
+                    <a href="./dla_standard.html">Dla standardowych użytkowników</a>
+                    <a href="./dla_firm.html">Dla firm</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <div><button>O nas</button></div>
+                <div class="dropdown_content">
+                    <a href="./cel_strony.html">Cel strony</a>
+                    <a href="./faq.html">FAQ</a>
+                    <a href="./kontakt.html">Kontakt</a>
+                </div>
+            </div>       
+        </div>
+        <h1 class="notification_header">Zapisane wydarzenia</h1>
+        <div class="lista_wydarzen_user">
+                <div class="list_event_container_user">
+                    <div class="list_event_info_wrapper_user">
+                        <div class="list_event_img_container">
+                        <img src="./pictures/koncert.jpg" alt="Koncert">
+                        </div>
+                        <div class="list_event_info_container">
+                            <div class="list_event_title">
+                                <p>Lorem Ipsum</p>
+                            </div>
+                            <div class="list_event_description">
+                                <p>fbgkbsfjbvskdbjjk  bjfdb kbsjdbjkvsdflbj kj bfkjbfd bj fdj fjlk bvbfdblkdsd bfd vfd</p>
+                            </div>
+                            <div class="list_event_overall_info">
+                                <img src="./pictures/kalendarz.svg" alt="Kalendarz">
+                                <p>1.1.2000</p>
+                                <img src="./pictures/location.svg" alt="Lokalizacja">
+                                <p>Warszawa, woj.Mazowieckie</p>
+                                <img src="./pictures/cena.svg" alt="Cena">
+                                <p>50zł</p>
+                                <img src="./pictures/oko.svg" alt="Obserwujący">
+                                <p>123 456 789</p>
+                                <img src="./pictures/czlowiek.svg" alt="Biorący udział">
+                                <p>123 456 789</p>
+                            </div>
+                        </div>
+                        <div class="user_event_info">
+                            <a href="#" onclick="showPopup()"><img src="./pictures/smietnik.svg" alt="Użytkownik"></a>
+                            <p>Zapisałeś wydarzenie</p>
+                            <a href="./wydarzenie.html">Zobacz wydarzenie</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="list_event_container_user">
+                    <div class="list_event_info_wrapper_user">
+                        <div class="list_event_img_container">
+                        <img src="./pictures/koncert.jpg" alt="Koncert">
+                        </div>
+                        <div class="list_event_info_container">
+                            <div class="list_event_title">
+                                <p>Lorem Ipsum</p>
+                            </div>
+                            <div class="list_event_description">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+                            </div>
+                            <div class="list_event_overall_info">
+                                <img src="./pictures/kalendarz.svg" alt="Kalendarz">
+                                <p>1.1.2000</p>
+                                <img src="./pictures/location.svg" alt="Lokalizacja">
+                                <p>Warszawa, woj.Mazowieckie</p>
+                                <img src="./pictures/cena.svg" alt="Cena">
+                                <p>50zł</p>
+                                <img src="./pictures/oko.svg" alt="Obserwujący">
+                                <p>123 456 789</p>
+                                <img src="./pictures/czlowiek.svg" alt="Biorący udział">
+                                <p>123 456 789</p>
+                            </div>
+                        </div>
+                        <div class="user_event_info">
+                            <img src="./pictures/smietnik.svg" alt="Użytkownik">
+                            <p>Bierzesz udział</p>
+                            <a href="./wydarzenie.html">Zobacz wydarzenie</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="list_event_container_user">
+                    <div class="list_event_info_wrapper_user">
+                        <div class="list_event_img_container">
+                        <img src="./pictures/koncert.jpg" alt="Koncert">
+                        </div>
+                        <div class="list_event_info_container">
+                            <div class="list_event_title">
+                                <p>Lorem Ipsum</p>
+                            </div>
+                            <div class="list_event_description">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+                            </div>
+                            <div class="list_event_overall_info">
+                                <img src="./pictures/kalendarz.svg" alt="Kalendarz">
+                                <p>1.1.2000</p>
+                                <img src="./pictures/location.svg" alt="Lokalizacja">
+                                <p>Warszawa, woj.Mazowieckie</p>
+                                <img src="./pictures/cena.svg" alt="Cena">
+                                <p>50zł</p>
+                                <img src="./pictures/oko.svg" alt="Obserwujący">
+                                <p>123 456 789</p>
+                                <img src="./pictures/czlowiek.svg" alt="Biorący udział">
+                                <p>123 456 789</p>
+                            </div>
+                        </div>
+                        <div class="user_event_info">
+                            <img src="./pictures/smietnik.svg" alt="Użytkownik">
+                            <p>Zapisałeś wydarzenie</p>
+                            <a href="./wydarzenie.html">Zobacz wydarzenie</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="list_event_container_user">
+                    <div class="list_event_info_wrapper_user">
+                        <div class="list_event_img_container">
+                        <img src="./pictures/koncert.jpg" alt="Koncert">
+                        </div>
+                        <div class="list_event_info_container">
+                            <div class="list_event_title">
+                                <p>Lorem Ipsum</p>
+                            </div>
+                            <div class="list_event_description">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+                            </div>
+                            <div class="list_event_overall_info">
+                                <img src="./pictures/kalendarz.svg" alt="Kalendarz">
+                                <p>1.1.2000</p>
+                                <img src="./pictures/location.svg" alt="Lokalizacja">
+                                <p>Warszawa, woj.Mazowieckie</p>
+                                <img src="./pictures/cena.svg" alt="Cena">
+                                <p>50zł</p>
+                                <img src="./pictures/oko.svg" alt="Obserwujący">
+                                <p>123 456 789</p>
+                                <img src="./pictures/czlowiek.svg" alt="Biorący udział">
+                                <p>123 456 789</p>
+                            </div>
+                        </div>
+                        <div class="user_event_info">
+                            <img src="./pictures/smietnik.svg" alt="Użytkownik">
+                            <p>Bierzesz udział</p>
+                            <a href="./wydarzenie.html">Zobacz wydarzenie</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="list_event_container_user">
+                    <div class="list_event_info_wrapper_user">
+                        <div class="list_event_img_container">
+                        <img src="./pictures/koncert.jpg" alt="Koncert">
+                        </div>
+                        <div class="list_event_info_container">
+                            <div class="list_event_title">
+                                <p>Lorem Ipsum</p>
+                            </div>
+                            <div class="list_event_description">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+                            </div>
+                            <div class="list_event_overall_info">
+                                <img src="./pictures/kalendarz.svg" alt="Kalendarz">
+                                <p>1.1.2000</p>
+                                <img src="./pictures/location.svg" alt="Lokalizacja">
+                                <p>Warszawa, woj.Mazowieckie</p>
+                                <img src="./pictures/cena.svg" alt="Cena">
+                                <p>50zł</p>
+                                <img src="./pictures/oko.svg" alt="Obserwujący">
+                                <p>123 456 789</p>
+                                <img src="./pictures/czlowiek.svg" alt="Biorący udział">
+                                <p>123 456 789</p>
+                            </div>
+                        </div>
+                        <div class="user_event_info">
+                            <img src="./pictures/smietnik.svg" alt="Użytkownik">
+                            <p>Zapisałeś wydarzenie</p>
+                            <a href="./wydarzenie.html">Zobacz wydarzenie</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="list_event_container_user">
+                    <div class="list_event_info_wrapper_user">
+                        <div class="list_event_img_container">
+                        <img src="./pictures/koncert.jpg" alt="Koncert">
+                        </div>
+                        <div class="list_event_info_container">
+                            <div class="list_event_title">
+                                <p>Lorem Ipsum</p>
+                            </div>
+                            <div class="list_event_description">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+                            </div>
+                            <div class="list_event_overall_info">
+                                <img src="./pictures/kalendarz.svg" alt="Kalendarz">
+                                <p>1.1.2000</p>
+                                <img src="./pictures/location.svg" alt="Lokalizacja">
+                                <p>Warszawa, woj.Mazowieckie</p>
+                                <img src="./pictures/cena.svg" alt="Cena">
+                                <p>50zł</p>
+                                <img src="./pictures/oko.svg" alt="Obserwujący">
+                                <p>123 456 789</p>
+                                <img src="./pictures/czlowiek.svg" alt="Biorący udział">
+                                <p>123 456 789</p>
+                            </div>
+                        </div>
+                        <div class="user_event_info">
+                            <img src="./pictures/smietnik.svg" alt="Użytkownik">
+                            <p>Bierzesz udział</p>
+                            <a href="./wydarzenie.html">Zobacz wydarzenie</a>
+                        </div>
+                    </div>
+                </div>                 
+            </div>
+            <div class="pop_up_container" id="pop_up_container">
+            <div class="pop_up_window">
+                <h1 class="pop_up_title">Czy na pewno chcesz usunąć wydarzenie z twojej listy?</h1>
+                <div class="pop_up_buttons">
+                    <button  class="execute_button">Tak</button>
+                    <button  onclick="hidePopup()" class="cancel_button" id="cancelButton">Nie</button>
+                </div>
+            </div>
+        </div>
+        <script>
+            function showPopup() {
+            document.getElementById('pop_up_container').style.display = 'flex';
+            }
+
+            function hidePopup() {
+            document.getElementById('pop_up_container').style.display = 'none';
+            }
+        </script>
+    </body>
+</html>

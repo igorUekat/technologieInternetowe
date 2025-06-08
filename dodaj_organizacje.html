@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Igor Skrzyński">
+        <meta name="description" content="Aplikacja do przeglądania i zarządzania wydarzeniami kulturalnymi w Polsce.">
+        <meta name="keywords" content="kultura, wydarzenia, koncerty, festiwale, sztuka, wydarzenia sportowe">
+        <title>KulturOn</title>
+        <link rel="stylesheet" href="style.css">       
+    </head>
+    <body>
+        <div class="login_main">
+            <div class="login_logo_container">
+                <a href="./index.html"><img src="./pictures/Logo.svg" alt="Fioletowy napis KulturOn" class="login_logo_img"></a>
+            </div>
+            <div class="login_container">
+                <h1 class="login_title">Zarejestruj firmę</h1>
+                <div class="login_input_container">
+                    <label for="nazwa">Nazwa:</label>
+                    <input type="text" id="nazwa" name="nazwa" required>
+                </div>
+                <div class="login_input_container">
+                    <label for="adres">Adres:</label>
+                    <input type="text" id="adres" name="adres" required>
+                </div>
+                <div class="login_input_container">
+                    <label for="regon">Regon:</label>
+                    <input type="text" id="regon" name="regon" required>
+                </div>
+                <div class="login_input_container">
+                    <label for="nip">NIP:</label>
+                    <input type="text" id="nip" name="nip" required>
+                </div>
+                <div class="login_input_container">
+                    <label for="haslo">Hasło:</label>
+                    <input type="password" id="haslo" name="haslo" required>
+                </div>
+                <button type="submit" class="login_button">Zarejestruj firmę</button>
+                <p class="message"></p>
+            </div>
+        </div>
+    </body>
+</html>
